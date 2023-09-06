@@ -33,4 +33,4 @@ I am excited about the opportunity to contribute to the Sellerkin project and lo
 
 Best regards,
 
-[Your Name]
+Sonali Keshri
