@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+:root {
+    --primary: #3A74C8;
+    --secondary: #46CCA9;
+    --white: #fff;
+    --black: #000;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.navbar {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary);
+    color: rgb(19, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-inline: 100px;
+    color: var(--white);
+}
+
+.navbar>h1 {
+    font-size: 2rem;
+}
+
+.signup-btn {
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 600;
+}
+
+#home {
+    height: 100vh;
+    width: 100vw;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home-content {
+    padding-top: 100px;
+    width: 60vw;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding-inline: 40px;
+    padding-block: 12px;
+    color: var(--white);
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.green {
+    background-color: var(--secondary);
+}
+
+.blue {
+    background-color: var(--primary);
+}
+
+.white {
+    color: var(--white);
+}
+
+.video-container {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: var(--secondary);
+    transition: all ease;
+}
+
+
+.card {
+    width: 100%;
+    height: 110%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green;
+    cursor: pointer;
+    border: 6px solid green;
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 100%;
+
+}
+
+#page2 {
+    width: 100vw;
+    height: 120vh;
+    margin-top: 300px;
+}
+
+.esty-para {
+    width: 50%;
+    margin: auto;
+    margin-block: 0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.features {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 2rem;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.features-list {
+    flex: 1;
+    margin-top: 30px;
+    font-size: 1.4rem;
+}
+
+.features-list>h1 {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.features-list>ul>li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.features-list>ul>li::before {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 10px;
+}
+
+.features-list>ul>li:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.features-card {
+    width: 45%;
+    height: 100%;
+    background-color: var(--secondary);
+}
+
+#page3 {
+    width: 100vw;
+    padding: 10px;
+}
+
+.page3-heading {
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.page3-heading>p:nth-child(2) {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid var(--secondary);
+    box-shadow: rgba(15, 189, 142, 0.5) 0px 5px 15px;
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.page3-heading>p:nth-child(2):hover {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.page3-content {
+    background-image: url(/bg1.webp);
+    padding: 20px;
+    font-size: 1.6rem;
+    padding-inline: 40px;
+}
+
+.page3-content>h4:nth-child(2) {
+    margin-bottom: 20px;
+
+}
+
+.page3-content>p {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+
+}
+
+#page4 {
+    width: 100vw;
+    margin-top: 50px;
+    padding: 20px;
+    padding-inline: 140px;
+    padding-bottom: 100px;
+}
+
+#page4>h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.page4-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.winning-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.winning-card {
+    width: 180px;
+    height: 140px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.winning-card>i {
+    font-size: 1.4rem;
+}
+
+.small-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.small-card>.formula-icon {
+    padding: 20px;
+    font-size: 2rem;
+    border: 3px solid var(--secondary);
+    border-radius: 100%;
+    color: var(--primary);
+}
+
+.winning-content>p {
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+#page5 {
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 20px;
+}
+
+#page5>h1 {
+    text-align: center;
+    color: var(--secondary);
+}
+
+#page5>div>h3 {
+    margin-bottom: 10px;
+}
+
+.solution>ul>li:hover {
+    color: var(--secondary);
+}
+
+.footer {
+    height: 10vh;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .hidden {
+        display: flex;
+    }
+    .home-content{
+        font-size: 1rem;
+    }
+    .page4-content{
+        gap: 2rem;
+    }
+    .winning-cards{
+        width: 100%;
+    }
+    .winning-card{
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-inline: 30px;
+    }
+
+    #home {
+        height: 70vh;
+    }
+
+    .home-content {
+        width: 80%;
+        /* font-size: 2rem; */
+    }
+
+    .home-content>h2 {
+        margin-top: 10px;
+        font-size: 1.8rem;
+    }
+    .btn {
+        margin-top: 60px;
+    }
+
+    #page2 {
+        height: 100%;
+        padding-inline: 40px;
+        padding-bottom: 10px;
+        margin-top: 230px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .features-list {
+        margin-top: 50px;
+    }
+
+    .features-card {
+        width: 80%;
+    }
+
+    .page3-heading {
+        width: 100%;
+    }
+
+    #page3 {
+        padding-inline: 40px;
+    }
+
+    .page3-content {
+        padding-inline: 40px;
+    }
+
+    #page4 {
+        padding: 25px;
+    }
+
+    .page4-content {
+        flex-direction: column;
+    }
+
+    .page4-content>.winning-cards {
+        width: 100%;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .winning-content>p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .solution>ul>li {
+        text-align: justify;
+        margin-bottom: 40px;
+        padding-inline: 40px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar>h3 {
+        display: none;
+    }
+
+    .home-content {
+        padding-top: 30px;
+        width: 90%;
+        
+    }
+
+    .home-content>h2 {
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+
+    .video-container {
+        width: 300px;
+    }
+
+    #page2{
+        padding-inline: 20px;
+    }
+    .esty-para {
+   
+        width: 100vw;
+    }
+
+    #page4 {
+        padding: 25px;
+    }
+
+
+
+
+}
